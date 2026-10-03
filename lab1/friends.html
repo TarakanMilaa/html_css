@@ -3,11 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <title>Друзяки</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 22px;
+        }
+        #Back{
+            font-style: italic;
+        }
+        h2{
+            text-align: center;
+        }
+        table{
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 5px;
+        }
+        .l1 > th{
+            text-align: center;
+            background-color: green;
+            color: white;
+            font-weight: bold;
+        }
+        .l2 > tr:nth-child(odd) td{
+            background-color: gray;
+            color: white;
+        }
+        .l2 > tr:nth-child(even) td{
+            background-color: white;
+            color: black;
+        }
+        .l2 td:last-child{
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
 <h1>Друзі Лазунько Софії Сергіївни</h1>
 <hr>
-<a href="index.html" title="Повернутись на початкову сторінку">"Назад на головну"</a>
+<a id="Back" href="index.html" title="Повернутись на початкову сторінку">"Назад на головну"</a>
 <hr>
 
 <h2>Мої друзі</h2>
@@ -15,7 +51,7 @@
     <table>
         <caption>Інформація про друзів</caption>
         <thead>
-        <tr>
+        <tr class="l1">
             <th>Прізвище</th>
             <th>Ім'я</th>
             <th>Дата народження</th>
@@ -23,7 +59,7 @@
             <th>Контактний телефон</th>
         </tr>
         </thead>
-        <tbody>
+        <tbody class="l2">
         <tr>
             <td>Менчук</td>
             <td>Наталія</td>

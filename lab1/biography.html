@@ -3,11 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <title>Автобіографія</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 22px;
+        }
+        #Back{
+            font-style: italic;
+        }
+        #content{
+            text-align: center;
+        }
+        nav a:link, nav a:visited {
+            text-decoration: none;
+            color: white;
+            background-color: mediumblue;
+            border: 2px solid dodgerblue;
+            display: block;
+            width: 250px;
+            margin: 3px;
+            text-align: center;
+        }
+        nav a:hover{
+            color: white;
+            background-color: maroon;
+        }
+        nav a:active{
+            color: black;
+            background-color: yellow;
+        }
+        article{
+            font-size: 120%;
+        }
+        article > h2{
+            font-size: 120%;
+        }
+        #base_inf > p{
+            color: white;
+            background-color: darkslategrey;
+        }
+        #childhood > p{
+            color: black;
+            background-color: lightslategrey;
+        }
+        #school_years > p{
+            color: white;
+            background-color: navy;
+        }
+        #out_sch > p{
+            color: black;
+            background-color: beige;
+        }
+        #university > p{
+            color: white;
+            background-color: maroon;
+        }
+        .ToContent{
+           font-weight: bold;
+        }
+        #Up{
+            text-transform: uppercase;
+        }
+
+    </style>
 </head>
 <body>
 <h1 id="biography">Автобіографія Лазунько Софії Сергіївни</h1>
 <hr>
-<a href="index.html" title="Повернутись на початкову сторінку">"Назад на головну"</a>
+<a id="Back" href="index.html" title="Повернутись на початкову сторінку">Назад на головну</a>
 <hr>
 
 <h3 id="content">Зміст</h3>
@@ -32,7 +95,7 @@
     здобуті в університеті.
 </p>
 </article>
-<a href="#content">До змісту</a>
+<a class="ToContent" href="#content">До змісту</a>
 
 <article id="childhood">
     <h2>Дитинство</h2>
@@ -43,7 +106,7 @@
     відкривати для себе щось нове і ніколи не сиділа на місці.
 </p>
 </article>
-<a href="#content">До змісту</a>
+<a class="ToContent" href="#content">До змісту</a>
 
 <article id="school_years">
     <h2>Шкільні роки</h2>
@@ -57,7 +120,7 @@
     на НМТ.
 </p>
 </article>
-<a href="#content">До змісту</a>
+<a class="ToContent" href="#content">До змісту</a>
 
 <article id="out_sch">
     <h2>Поза школою</h2>
@@ -69,7 +132,7 @@
     Дуже часто могла допомагати батькові з роботою, і ми разом збирали люстри, які потім опинялись на вітринах.
 </p>
 </article>
-<a href="#content">До змісту</a>
+<a class="ToContent" href="#content">До змісту</a>
 
 <article id="university">
     <h2>Університет</h2>
@@ -81,10 +144,10 @@
     спеціальністю, то набуті знання всеодно, так чи інакше, принесуть свої плоди.
 </p>
 </article>
-<a href="#content">До змісту</a>
+<a class="ToContent" href="#content">До змісту</a>
 
 <hr>
-<a href="#biography">Вгору</a>
+<a id="Up" href="#biography">Вгору</a>
 
 </body>
 </html>

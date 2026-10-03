@@ -3,15 +3,44 @@
 <head>
     <meta charset="UTF-8">
     <title>Наші дні</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 22px;
+        }
+        #Back{
+            font-style: italic;
+        }
+        h2{
+            text-align: center;
+        }
+        .list1 > li:nth-child(odd){
+            color: white;
+            background-color: gray;
+        }
+       .list1 > li:nth-child(even){
+            color: black;
+            background-color: white;
+        }
+        .list2 > li:nth-child(3){
+            cursor: pointer;
+        }
+        .list2 > li:nth-child(4){
+            background-color: pink;
+        }
+        .list2 > li:nth-child(5){
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
 <h1>Сьогодення Лазунько Софії Сергіївни</h1>
 <hr>
-<a href="index.html" title="Повернутись на початкову сторінку">"Назад на головну"</a>
+<a id="Back" href="index.html" title="Повернутись на початкову сторінку">"Назад на головну"</a>
 <hr>
 
 <h2>Мій типовий список покупок</h2>
-<ul>
+<ul class="list1">
     <li>Хліб</li>
     <li>Яйця</li>
     <li>Молочні продукти:
@@ -39,7 +68,7 @@
 </ul>
 
 <h2>Мій улюблений десерт</h2>
-<ol>
+<ol class="list2">
     <li>Увімкнути духовку розігріватися до 180 градусів.</li>
     <li>Підготувати форму та начинку:
         <ol>
