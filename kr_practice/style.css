@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    text-align: center;
+}
+h4 {
+    font-family: "Roboto Slab", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.Blocks {
+    font-family: "Tiny5 Duo", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+            "wdth" 100,
+            "BLED" 0,
+            "JITT" 0,
+            "ROND" 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bl1, .bl2, .bl3, .bl4 {
+    padding: 20px;
+    border: 1px solid black;
+}
+
+.bl1 {
+    background-color: #e3f2fd;
+    color: #000;
+}
+.bl2 {
+    background-color: #c8e6c9;
+    color: #000;
+}
+.bl3 {
+    background-color: #ffe0b2;
+    color: #000;
+}
+.bl4 {
+    background-color: #f8bbd0;
+    color: #000;
+}
+
+h1{
+    background-color: #91ed91;
+    color: #070707;
+}
+h2{
+    background-color: #d1dcff;
+    color: #070707;
+}
+h3{
+    background-color: #ffa7d4;
+    color: #070707;
+}
+h4 {
+    text-align: center;
+    font-size: 120%;
+    background-color: #1a237e;
+    color: #ffffff;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+@media (max-width: 768px) {
+    .col-sm-12 {
+        flex: 100%;
+    }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+    .col-md-6 {
+        flex: 50%;
+    }
+
+}
+
+@media (min-width: 993px) and (max-width: 1200px) {
+    .col-lg-4 {
+        flex: 33.33%;
+    }
+    .col-lg-12 {
+        flex: 100%;
+    }
+}
+@media (min-width: 1201px) {
+    .col-xl-12 {
+        flex: 100%;
+    }
+}
